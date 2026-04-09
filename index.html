@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Detallado Automotriz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        dark: '#1D2129',
+                        light: '#F2F3F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .scroll-smooth {
+                scroll-behavior: smooth;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            }
+        }
+    </style>
+</head>
+<body class="bg-light text-dark font-sans scroll-smooth">
+    <!-- Encabezado -->
+    <header class="bg-gradient-to-r from-primary to-secondary text-white py-8 px-4 text-center">
+        <h1 class="text-[clamp(1.8rem,5vw,2.5rem)] font-bold text-shadow mb-2">DETALLADO AUTOMOTRIZ</h1>
+        <p class="text-lg opacity-90 mb-4">Tu socio para el cuidado y embellecimiento de vehículos</p>
+        <div class="flex justify-center gap-3 flex-wrap">
+            <a href="tel:[Tu Número]" class="bg-white text-primary px-4 py-2 rounded-full font-medium shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                <i class="fa fa-phone"></i> Llamar
+            </a>
+            <a href="https://wa.me/[Tu Número]" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-full font-medium shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                <i class="fa fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:[Tu Correo]" class="bg-white text-primary px-4 py-2 rounded-full font-medium shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                <i class="fa fa-envelope"></i> Correo
+            </a>
+        </div>
+    </header>
+
+    <!-- Navegación por botones -->
+    <nav class="bg-white sticky top-0 z-10 shadow-sm py-3 px-4 overflow-x-auto">
+        <div class="flex gap-2 min-w-max">
+            <a href="#exterior" class="bg-primary/10 text-primary px-4 py-2 rounded-lg whitespace-nowrap font-medium hover:bg-primary/20 transition-colors">Lavado Exterior</a>
+            <a href="#interior" class="bg-primary/10 text-primary px-4 py-2 rounded-lg whitespace-nowrap font-medium hover:bg-primary/20 transition-colors">Lavado Interior</a>
+            <a href="#especiales" class="bg-primary/10 text-primary px-4 py-2 rounded-lg whitespace-nowrap font-medium hover:bg-primary/20 transition-colors">Servicios Especiales</a>
+            <a href="#productos" class="bg-primary/10 text-primary px-4 py-2 rounded-lg whitespace-nowrap font-medium hover:bg-primary/20 transition-colors">Productos</a>
+            <a href="#politicas" class="bg-primary/10 text-primary px-4 py-2 rounded-lg whitespace-nowrap font-medium hover:bg-primary/20 transition-colors">Políticas</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <!-- Sección 1: Lavado Exterior -->
+        <section id="exterior" class="mb-16">
+            <h2 class="text-[clamp(1.5rem,4vw,2rem)] font-bold text-primary border-b border-gray-200 pb-3 mb-6 flex items-center gap-2">
+                <i class="fa fa-car"></i> Servicios de Lavado Exterior
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Tarjeta de Servicio -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Lavado Básico Exterior</h3>
+                            <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-sm">$200 - $350 MXN</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Lavado con espuma de alta calidad, enjuague manual, secado con paños de microfibra, limpieza de ruedas y neumáticos.</p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-1">Beneficios:</h4>
+                            <p class="text-gray-600 text-sm">Limpieza rápida y efectiva, ideal para mantenimiento semanal o quincenal.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3 border-t border-gray-100">
+                        <a href="https://wa.me/[Tu Número]?text=Hola,%20quiero%20agendar%20el%20servicio:%20Lavado%20Básico%20Exterior" target="_blank" class="block w-full bg-primary hover:bg-primary/90 text-white text-center py-2 rounded-lg font-medium transition-colors">
+                            Agendar Servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Servicio -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Lavado Premium Exterior</h3>
+                            <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-sm">$500 - $800 MXN</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Incluye todo el lavado básico + aplicación de cera líquida, limpieza de marcos de ventanas, pulido de luces y tratamiento de plásticos exteriores.</p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-1">Beneficios:</h4>
+                            <p class="text-gray-600 text-sm">Brillo duradero, protección contra rayos UV y suciedad, mejora la apariencia general.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3 border-t border-gray-100">
+                        <a href="https://wa.me/[Tu Número]?text=Hola,%20quiero%20agendar%20el%20servicio:%20Lavado%20Premium%20Exterior" target="_blank" class="block w-full bg-primary hover:bg-primary/90 text-white text-center py-2 rounded-lg font-medium transition-colors">
+                            Agendar Servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Servicio -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Pulido y Abrillantado</h3>
+                            <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-sm">$1,200 - $2,500 MXN</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Corrección de rayones leves, oxidación y manchas mediante pulidoras y productos especializados, seguido de abrillantado para un acabado espejo.</p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-1">Beneficios:</h4>
+                            <p class="text-gray-600 text-sm">Elimina imperfecciones, rejuvenece la pintura, aumenta el valor del vehículo.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3 border-t border-gray-100">
+                        <a href="https://wa.me/[Tu Número]?text=Hola,%20quiero%20agendar%20el%20servicio:%20Pulido%20y%20Abrillantado" target="_blank" class="block w-full bg-primary hover:bg-primary/90 text-white text-center py-2 rounded-lg font-medium transition-colors">
+                            Agendar Servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Servicio -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Recubrimiento Cerámico</h3>
+                            <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-sm">$2,500 - $8,000 MXN</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Capa protectora de alta tecnología que se adhiere a la pintura, resistente a rayones, químicos y rayos UV. Disponible en versiones de 1 a 5 años de duración.</p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-1">Beneficios:</h4>
+                            <p class="text-gray-600 text-sm">Protección a largo plazo, brillo intenso y fácil mantenimiento, inversión duradera.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3 border-t border-gray-100">
+                        <a href="https://wa.me/[Tu Número]?text=Hola,%20quiero%20agendar%20el%20servicio:%20Recubrimiento%20Cerámico" target="_blank" class="block w-full bg-primary hover:bg-primary/90 text-white text-center py-2 rounded-lg font-medium transition-colors">
+                            Agendar Servicio
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <a href="https://wa.me/[Tu Número]?text=Hola,%20quiero%20información%20sobre%20más%20servicios%20de%20lavado%20exterior" target="_blank" class="inline-block border border-primary text-primary hover:bg-primary/5 px-5 py-2 rounded-lg font-medium transition-colors">
+                    Ver más servicios de lavado exterior
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección 2: Lavado Interior -->
+        <section id="interior" class="mb-16">
+            <h2 class="text-[clamp(1.5rem,4vw,2rem)] font-bold text-primary border-b border-gray-200 pb-3 mb-6 flex items-center gap-2">
+                <i class="fa fa-car-side"></i> Servicios de Lavado Interior
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Tarjeta de Servicio -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Lavado Básico Interior</h3>
+                            <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-sm">$350 - $600 MXN</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Aspirado de alfombras, asientos y maletero, limpieza de tablero, consolas y paneles de puertas con productos adecuados, limpieza de cristales interiores.</p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-1">Beneficios:</h4>
+                            <p class="text-gray-600 text-sm">Ambiente limpio y fresco, ideal para mantenimiento regular.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3 border-t border-gray-100">
+                        <a href="https://wa.me/[Tu Número]?text=Hola,%20quiero%20agendar%20el%20servicio:%20Lavado%20Básico%20Interior" target="_blank" class="block w-full bg-primary hover:bg-primary/90 text-white text-center py-2 rounded-lg font-medium transition-colors">
+                            Agendar Servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Servicio -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Lavado Profundo Interior</h3>
+                            <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-sm">$800 - $1,500 MXN</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Incluye todo el servicio básico + extracción de manchas y suciedad incrustada en alfombras y tapicerías, limpieza de conductos de ventilación, tratamiento de olores.</p>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-1">Beneficios:</h4>
+                            <p class="text-gray-600 text-sm">Elimina manchas difíciles, alergias y olores persistentes, mejora la calidad del aire.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3 border-t border-gray-100">
+                        <a href="https://wa.me/[Tu Número]?text=Hola,%20quiero%20agendar%20el%20servicio:%20Lavado%20Profundo%20Interior" target="_blank" class="block w-full bg-primary hover:bg-primary/90 text-white text-center py-2 rounded-lg font-medium transition-colors">
+                            Agendar Servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Servicio -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Tratamiento de Cuero</h3>
+                            <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-sm">$600 - $1,2
